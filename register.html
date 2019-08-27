@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+  
+  
+  <!-- <link href="css/home.css" rel="stylesheet"> -->
+
+</head>
+<body>
+
+
+
+
+
+<center><h1>REGISTRATION</h1></center><br>
+
+
+
+<div id="contain" class="container">
+
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="Name" id="first">First Name</label>
+        <center id="left"><input type="text" class="form-control" id="fname" placeholder="Enter Your First Name"></center>
+      </div>
+
+      <div class="form-group">
+        <label for="Name" id="middle">Middle Name</label>
+        <center id="left"><input type="text" class="form-control" id="mname" placeholder="Enter Your Middle Name"></center>
+      </div>
+
+
+      <div class="form-group">
+        <label for="Name" id="last">Last Name</label>
+        <center id="left"><input type="text" class="form-control" id="lname" placeholder="Enter Your Last Name"></center>
+      </div>
+     
+    <div class="form-group">
+    <label  for="email"  id="first">Email</label>
+    <center id="left" ><input type="email" class="form-control" id="email" placeholder="Your email"></center>
+    </div>
+
+    <div class="form-group">
+      <label for="Number"  id="first1">Mobile Number</label>
+      <center id="left" ><input type="text" class="form-control" id="number" placeholder="Enter Your Contact Number"></center>
+   </div>
+
+    <div class="form-group">
+    <label  for="pwd"  id="first2">Password</label>
+    <center id="left" ><input type="password" class="form-control" id="pwd" placeholder="Enter password"></center>
+    </div>
+
+    <div class="form-group">
+      <label  for="pwd"  id="first2">Confirm Password</label>
+      <center id="left" ><input type="password" class="form-control" id="cpwd" placeholder="Confirm password"></center>
+      </div>
+
+    <!-- <div class="checkbox">
+        <label><input type="checkbox" name="remember">i agree terms of services</label>
+      </div>
+      <div class="form-group"> -->
+    
+        
+        <!-- <button type="button" class="btn btn-success"  onclick="register()">REGISTRATION</button> -->
+        <a href="#" ><button type="button"  class="btn btn-success" onclick="register()">REGISTER</button></a>
+        <!-- <a href="#" onclick="someFunction(); return false;">LINK</a> -->
+    </div>
+
+    </form>
+  
+  </div>
+
+  <script>
+    function register(){
+    let fname=document.getElementById('fname').value;
+    let mname=document.getElementById('mname').value;
+    let lname=document.getElementById('lname').value;
+    let email=document.getElementById('email').value;
+    let number=document.getElementById('number').value;
+    let pwd=document.getElementById('pwd').value;
+    let cpwd=document.getElementById('cpwd').value;
+     if(fname==''){
+    alert('enter the Firstname')
+    
+     }
+    else if(mname==''){
+    alert('enter the Middlename')
+    
+     }
+      else if(lname==''){
+    alert('enter the Lastname')
+    
+     }
+     else if(email==''){
+    alert('enter the email')
+    
+     }
+     else if(number===''){
+    alert('enter the number')
+    
+     }
+     else if(pwd==''){
+    alert('enter the Password')
+    
+     }
+     else if(cpwd==''){
+    alert('enter the Confirm Password')
+    
+     }
+    
+     else{
+    alert('Success')
+    
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    </script>
+    
+
+
+   </body>
+                      </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+  
+  
+  <link href="css/home.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+       
+      <!-- <h2>Sign In To Your Account</h2> -->
+      <center><h1>HOME</h1></center><br>
+      
+      
+      
+      <div id="contain" class="container">
+          <form action="#">
+            
+          <div class="form-group">
+          <label  for="email" id="mail" >Email ID</label>
+          <center id="left9" ><input type="email" class="form-control" id="email" name="email" placeholder="Your email"></center>
+          </div>
+          <div class="form-group">
+          <label  for="pwd" id="mail2">Password</label>
+          <center id="left9" ><input type="password" class="form-control" id="pwd" placeholder="Your password"></center>
+          </div>
+          <!-- <div class="checkbox">
+              <span style="margin-left: 90px;"><label><input type="checkbox" name="remember">Remember Me</span></label><span style="margin-left:90px">Forgot password?</span>
+              
+              
+            </div> -->
+            <!-- <div class="form-group">
+                <center id="left9"><button type="submit" class="btn btn-default" onclick="login()">LOGIN</button></center>
+            </div> -->
+
+            
+            <div class="form-group">
+    
+                <a href="curdoperations.html" ><button type="button"  class="btn btn-success"  onclick="login()">LOGIN</button></a>
+    <!-- <button type="button"  class="btn btn-success"  onclick="register()">REGISTRATION <a href="register.html"</button> -->
+        <a href="register.html" ><button type="button"  class="btn btn-success"  onclick="register()">REGISTRATION</button></a>
+
+</div>
+      
+          </form>
+        </div>
+    
+      
+                      
+                    
+                      </body>
+                      </html>
+
+
+
+                      <script type="text/javascript">  
+                        function login(){
+let email=document.getElementById('email').value;
+let password=document.getElementById('pwd').value;
+let mail=document.getElementById('email');
+
+if(email==='' && password===''){
+alert('Please Fill Login Form')
+                        }
+else if(email===''){
+alert('Please enter The Email')
+
+}
+
+else if(password===''){
+alert('Please enter the password')
+
+} 
+else if(mail==='user@gmail.com'){
+
+alert('user start with @gmail.com')
+}
+
+else if(password.length<4){
+    alert('password will be more than 5 letters')
+
+
+}
+
+else{
+alert('success')
+
+}
+
+
+
+
+}
+                        </script> 
